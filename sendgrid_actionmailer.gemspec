@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'sendgrid_actionmailer/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'sendgrid-actionmailer'
+  spec.name          = 'sendgrid_actionmailer'
   spec.version       = SendGridActionMailer::VERSION
   spec.authors       = ['Eddie Zaneski']
   spec.email         = ['community@sendgrid.com']
@@ -18,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'mail', '~>2.5.3'
+  spec.add_dependency 'mail', '~>2.6.0'
   spec.add_dependency 'sendgrid-ruby', '~> 0.0'
 
   spec.add_development_dependency 'bundler', '~> 1.6'
